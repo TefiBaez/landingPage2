@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Century Gothic';
+}
+
+body {
+    font-family: 'Century Gothic';
+    background-color: purple;
+    color: #fefbfb;
+}
+
+header {
+    background-color: purple;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.section-button {
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: white;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.section-content {
+    display: none;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.section-button:focus + .section-content {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+/* Agrega estos estilos para el efecto de superposición */
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    z-index: 2;
+}
+
+#expanded-img {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 90%;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.3); /* Agrega sombra alrededor de la imagen */
+    z-index: 3;
+}
+
+/* Estilos adicionales para el formulario de contacto */
+.contact-form form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    background-color: #ffffff;
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social-section {
+    text-align: center; /* Centra el texto horizontalmente */
+    margin-top: 20px; /* Espacio superior para separar de otras secciones */
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra los iconos horizontalmente */
+    margin-top: 10px; /* Espacio entre el título y los iconos */
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    border-radius: 50%;
+    margin-right: 10px; /* Espacio entre los iconos */
+    text-decoration: none; /* Quitar subrayado del enlace */
+}
+
+.social-icon:hover {
+    background-color: #007bff; /* Cambia el color al pasar el mouse */
+}
+
+.facebook {
+    background-color: #3b5998; /* Color representativo de Facebook */
+}
+
+.instagram {
+    background-color: #e4405f; /* Color representativo de Instagram */
+}
+
+.tiktok {
+    background-color: #69c9d0; /* Color representativo de TikTok */
+}
+
+.twitter {
+    background-color: black; /* Color representativo de Twitter */
+}
